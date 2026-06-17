@@ -1,0 +1,16 @@
+steps:
+  # Trigger Google Cloud Infrastructure Manager to execute our Terraform code
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:latest'
+    entrypoint: 'gcloud'
+    args:
+      - 'infra-manager'
+      - 'deployments'
+      - 'apply'
+      - 'strict-components-deployment'
+      - '--project=$PROJECT_ID'
+      - '--location=us-central1'
+      - '--local-source=./infra'
+      - '--input-values=project_id=$PROJECT_ID,region=us-central1'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
