@@ -1,6 +1,7 @@
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:latest'
   args:
+  - 'gcloud'          
   - 'infra-manager'
   - 'deployments'
   - 'apply'
@@ -10,6 +11,5 @@ steps:
   - '--git-source-directory=infra'
   - '--service-account=projects/gci-techss-gcp-pjnp-01nl165115/serviceAccounts/591592795300-compute@developer.gserviceaccount.com'
 
-# 👇 ADD THIS SECTION AT THE BOTTOM
 options:
   logging: CLOUD_LOGGING_ONLY
