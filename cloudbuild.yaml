@@ -9,7 +9,7 @@ steps:
   - '--project=gci-techss-gcp-pjnp-01nl165115'
   - '--location=us-central1'
   - '--git-source-repo=$_REPO_URL'                  
-  - '--git-source-revision=$COMMIT_SHA'             
+  - '--git-source-ref=$COMMIT_SHA'             
   - '--git-source-directory=infra'
   - '--service-account=projects/gci-techss-gcp-pjnp-01nl165115/serviceAccounts/591592795300-compute@developer.gserviceaccount.com'
 
