@@ -11,6 +11,7 @@ steps:
   - '--git-source-repo=https://github.com/mathewnimmy123-sys/gcp-infra-pipeline'                  
   - '--git-source-ref=$COMMIT_SHA'             
   - '--git-source-directory=infra'
+  - '--input-values=project_id=gci-techss-gcp-pjnp-01nl165115'
   - '--service-account=projects/gci-techss-gcp-pjnp-01nl165115/serviceAccounts/591592795300-compute@developer.gserviceaccount.com'
 
 options:
